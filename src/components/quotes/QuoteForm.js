@@ -1,4 +1,4 @@
-import { useRef, useState, Fragment } from "react";
+import { useRef, Fragment } from "react";
 
 import Card from "../UI/Card";
 import LoadingSpinner from "../UI/LoadingSpinner";
@@ -7,7 +7,7 @@ import classes from "./QuoteForm.module.css";
 const QuoteForm = (props) => {
   const authorInputRef = useRef();
   const textInputRef = useRef();
-  const [isEntering, setIsEntering] = useState(false);
+  // const [isEntering, setIsEntering] = useState(false);
 
   function submitFormHandler(event) {
     event.preventDefault();
@@ -21,10 +21,10 @@ const QuoteForm = (props) => {
   }
 
   const fomrFocusedHandler = () => {
-    setIsEntering(true);
+    // setIsEntering(true);
   };
   const finishEnteringHandler = () => {
-    setIsEntering(false);
+    // setIsEntering(false);
   };
 
   return (
